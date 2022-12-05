@@ -1,0 +1,56 @@
+/* PALETA DE COLORES 
+.color1 {color: #efcb6b;}
+.color2 {color: #efdc8c;}
+.color3 {color: #121d50;}
+.color4 {color: #125774;}
+.color5 {color: #17a6a2;}
+*/
+
+*{
+    margin: 0px auto;
+    padding: 10px;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav > ul{
+    background-color: whitesmoke;
+    
+}
+
+#main-content{
+    background: #17a6a2;
+}
+
+.header{
+    color: #efcb6b;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.header-title{
+    background-color: #125774;
+    color: #efdc8c;
+}
+
+.form-div{
+    margin-top: 10px;
+    background-color: aliceblue;
+}
+
+.viewProductSel-div{
+    margin-top: 10px;
+    background-color: #efdc8c;
+}
+
+#register-form{
+    background-color: red;
+}
+
+label{
+    display: inline-block;
+}
+
+input{
+    display: inline-block;
+}

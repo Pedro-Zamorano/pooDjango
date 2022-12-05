@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+
+{% block header-title %}VENTA{% endblock %}
+
+{% block content %}
+    <div class="main-div">
+        <div class="product-div">
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Stock</th>
+                    <th>Precio</th>
+                    <th>Posición</th>
+                    <th>Código</th>
+                </tr>
+            </table>
+        </div>
+        <div class="form-div">
+            <form action="">
+                <label>Ingrese el código del producto</label>
+                <br>
+                <select name="" id="">
+                    <option value="">Producto 1</option>
+                    <option value="">Producto 2</option>
+                    <option value="">Producto 3</option>
+                    <option value="">Producto 4</option>
+                </select>
+                <br>
+                <input type="submit" value="Guardar">
+            </form>
+        </div>
+        <div class="viewProductSel-div">
+            <h3>Aqui aparece el producto seleccionado</h3>
+        </div>
+    </div>
+{% endblock %}
