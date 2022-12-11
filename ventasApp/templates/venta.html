@@ -13,20 +13,31 @@
                     <th>Posición</th>
                     <th>Código</th>
                 </tr>
+                <!-- aqui va el listado de la BBDD -->
+                
+                {% for product in products %}
+                <tr>
+                    <td>{{ product.nombre }}</td>
+                    <td>{{ product.stock }}</td>
+                    <td>{{ product.precio }}</td>
+                    <td>{{ product.posicion }}</td>
+                    <td>{{ product.codigo_producto }}</td>
+                </tr>
+                {% endfor %}
+                
             </table>
         </div>
         <div class="form-div">
             <form action="">
-                <label>Ingrese el código del producto</label>
+                <label><strong>Ingrese el código del producto</strong></label>
                 <br>
-                <select name="" id="">
-                    <option value="">Producto 1</option>
-                    <option value="">Producto 2</option>
-                    <option value="">Producto 3</option>
-                    <option value="">Producto 4</option>
+                <select class="sel-product">
+                    {% for code in products %}
+                        <option value="{{ code.codigo_producto }}">{{ code.codigo_producto }}</option>
+                    {% endfor %}
                 </select>
                 <br>
-                <input type="submit" value="Guardar">
+                <input class="boton" type="submit" value="Guardar">
             </form>
         </div>
         <div class="viewProductSel-div">
