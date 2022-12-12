@@ -25,4 +25,7 @@ urlpatterns = [
     path('inicio/', ventasViews.index, name="inicio"),
     path('venta/', ventasViews.venta, name="venta"),
     path('registro/', ventasViews.registroUsuario, name="registro"),
+    path("verVentas/", ventasViews.verVentas, name="verVentas"),
+    path('save/', ventasViews.save, name="save"),
+    path('sell/', ventasViews.sell, name="sell"),
 ]
